@@ -29,6 +29,12 @@
 					<span>Data Kasir</span></a>
 			</li>
 
+			<li class="nav-item <?= $aktif == 'customer' ? 'active' : '' ?>">
+				<a class="nav-link" href="<?= base_url('customer') ?>">
+					<i class="fas fa-fw fa-cash-register"></i>
+					<span>Data Customer</span></a>
+			</li>
+
 			<!-- Divider -->
 			<hr class="sidebar-divider">
 	

@@ -1,7 +1,7 @@
 <?php
 
-class M_kasir extends CI_Model{
-	protected $_table = 'kasir';
+class M_customer extends CI_Model{
+	protected $_table = 'customer';
 
 	public function lihat(){
 		$query = $this->db->get($this->_table);
@@ -18,8 +18,8 @@ class M_kasir extends CI_Model{
 		return $query->row();
 	}
 
-	public function lihat_username($username_kasir){
-		$query = $this->db->get_where($this->_table, ['username_kasir' => $username_kasir]);
+	public function lihat_username($nm_cust){
+		$query = $this->db->get_where($this->_table, ['nm_cust' => $nm_cust]);
 		return $query->row();
 	}
 

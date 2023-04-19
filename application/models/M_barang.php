@@ -22,6 +22,14 @@ class M_barang extends CI_Model{
 		$query = $this->db->get_where($this->_table, ['id' => $id]);
 		return $query->row();
 	}
+	public function tambah($data){
+		return $this->db->insert($this->_table, $data);
+	}
+
+	public function hapus($id){
+		return $this->db->delete($this->_table, ['id' => $id]);
+	}
+
 
 	
 }

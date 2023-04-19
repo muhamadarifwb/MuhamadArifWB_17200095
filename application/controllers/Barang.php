@@ -42,7 +42,7 @@ class Barang extends CI_Controller{
             'satuan' => $this->input->post('satuan'),
         ];
 
-        if ($this-m_barang->tambah($data)){
+        if ($this->m_barang->tambah($data)){
             $this->session->set_flashdata('success', 'Data Barang <strong> BErhasil</strong> Ditambahkan!');
             redirect('barang');
         } else {
@@ -76,8 +76,8 @@ class Barang extends CI_Controller{
             'satuan' => $this->input->post('satuan'),
         ];
 
-        if ($this-m_barang->ubah($data, $kode_barang)){
-            $this->session->set_flashdata('success', 'Data Barang <strong> BErhasil</strong> Ditambahkan!');
+        if ($this->m_barang->ubah($data, $kode_barang)){
+            $this->session->set_flashdata('success', 'Data Barang <strong> Berhasil</strong> Ditambahkan!');
             redirect('barang');
         } else {
             $this->session->set_flashdata('error', 'Data Barang <strong> Gagal</strong> Ditambahkan!');
