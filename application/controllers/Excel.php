@@ -17,6 +17,14 @@ public function export_excel_kasir(){
  $this->load->view('kasir/laporan_kasir_ex',$data);
  }
 
+
+
+public function export_excel_barang(){
+    $data = array( 'title' => 'Laporan Excel',
+    'barang' => $this->Excel_model->listing());
+    $this->load->view('barang/laporan_barang_ex',$data);
+    }
+   
 }
 
 /* End of file Excel.php */

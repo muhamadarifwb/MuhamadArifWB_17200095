@@ -15,6 +15,7 @@ public function __construct()
  public function listing() {
  $this->db->select('*');
  $this->db->from('kasir');
+ $this->db->from('barang');
  $query = $this->db->get();
  return $query->result();
  }

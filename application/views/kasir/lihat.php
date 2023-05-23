@@ -21,7 +21,8 @@
 					</div>
 					<div class="float-right">
 						<?php if ($this->session->login['role'] == 'admin'): ?>
-							<a href="<?= base_url('kasir/export') ?>" class="btn btn-danger btn-sm"><i class="fa fa-file-pdf"></i>&nbsp;&nbsp;Export</a>
+							<a href="<?= base_url('pdf/export_pdf_kasir') ?>" class="btn btn-danger btn-sm"><i class="fa fa-file-pdf"></i>&nbsp;&nbsp;Export</a>
+							<a href="<?= base_url('excel/export_excel_kasir') ?>" class="btn btn-warning btn-sm"><i class="fa fa-file-pdf"></i>&nbsp;&nbsp;Excel</a>
 							<a href="<?= base_url('kasir/tambah') ?>" class="btn btn-primary btn-sm"><i class="fa fa-plus"></i>&nbsp;&nbsp;Tambah</a>
 						<?php endif ?>
 					</div>
